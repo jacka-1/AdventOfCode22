@@ -1,7 +1,11 @@
 import pandas as pd
 import numpy as np
+import os
 
-data = pd.read_csv('/Users/jackatkinson/Desktop/AdventOfCode22/1/input1.csv', header=None, skip_blank_lines=False)
+cwd = os.getcwd()
+path = os.path.join(cwd, 'input.csv')
+
+data = pd.read_csv(path, header=None, skip_blank_lines=False)
 data = list(data[0])
 
 c = 0
